@@ -61,6 +61,10 @@
 \addbibresource{templates/example.bib}
 \bibhang1em
 
+% create a checkmark with tikz
+\usepackage{tikz}
+\def\checkmark{\tikz\fill[scale=0.4](0,.35) -- (.25,0) -- (1,.7) -- (.25,.15) -- cycle;} 
+
 \begin{document}
 
 % change the following line to "ngerman" for German style date and logos
@@ -72,8 +76,14 @@
 \end{frame}
 
 %table of contents
-\begin{frame}{Outline/Gliederung}
+\begin{frame}{Outline}
 \tableofcontents
 \end{frame}
+
+\setbeamercovered{invisible}
+
+\input{./sections/criteria.tex}
+\input{./sections/designchanges.tex}
+
 
 \end{document}
