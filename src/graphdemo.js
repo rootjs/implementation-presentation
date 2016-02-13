@@ -1,3 +1,3 @@
-var root = require('~/code/rootjs/implementation/build/Release/rootjs.node');
+var root = require('/Users/christoph/code/rootjs/implementation/index.js');
 
-root.gCling.LoadFile("./exclusiongraph.C");
+root.gCling.LoadFile("/Users/christoph/code/rootjs/implementation-presentation/src/exclusiongraph.C");
