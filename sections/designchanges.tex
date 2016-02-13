@@ -3,23 +3,22 @@
 \begin{frame}{AsyncRunner}
 	\begin{itemize}
 		\item We added a helper class for asynchronous operations, 'AsyncRunner'
-		\item What does it do?
-		\item Why do we need it?
+		\item Uses libuv internally
+		\item TThread doesn't allow communtication between node threads
 	\end{itemize}
 \end{frame}
 
 \begin{frame}{MetaInfo}
 	\begin{itemize}
-		\item We added a helper class to encapsulate differences between TGlobalFunctions and ...
-		\item What does it do?
-		\item Why do we need it?
+		\item We added a helper class to encapsulate differences between TGlobals and TDataMember
+		\item TGlobal inherits from , TDataMember from
 	\end{itemize}
 \end{frame}
 
-\begin{frame}{Classexposer}
+\begin{frame}{Other functionality}
 	\begin{itemize}
-		\item We added a helper class for asynchronous operations, 'AsyncRunner'
-		\item What does it do?
-		\item Why do we need it?
+		\item Dynamic library loader: ROOT doesn't load enough libraries on its own
 	\end{itemize}
 \end{frame}
+
+
