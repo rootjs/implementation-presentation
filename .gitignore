@@ -6,3 +6,6 @@ presentation.out
 presentation.run.xml
 presentation.snm
 presentation.toc
+*.mov
+.DS_Store
+resources/
