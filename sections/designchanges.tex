@@ -1,5 +1,6 @@
 \section{Changes in design}
 
+\subsection{AsyncRunner}
 \begin{frame}{AsyncRunner}
 	\begin{itemize}
 		\item We added a helper class for asynchronous operations, 'AsyncRunner'
@@ -8,14 +9,16 @@
 	\end{itemize}
 \end{frame}
 
+\subsection{MetaInfo}
 \begin{frame}{MetaInfo}
 	\begin{itemize}
 		\item We added a helper class to encapsulate differences between TGlobals and TDataMember
-		\item TGlobal inherits from , TDataMember from
+		\item TGlobal has a getAdress() method to get the absolute adress, TDataMember only getOffset()
 	\end{itemize}
 \end{frame}
 
-\begin{frame}{Other functionality}
+\subsection{Other changes}
+\begin{frame}{Other changes}
 	\begin{itemize}
 		\item Dynamic library loader: ROOT doesn't load enough libraries on its own
 		\item removed get exports
